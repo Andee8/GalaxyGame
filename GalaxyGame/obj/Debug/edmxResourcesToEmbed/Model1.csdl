@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Asteroid">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Asteroids__Celes__5629CD9C" FromRole="Asteroids" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="BlackHole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__BlackHole__Celes__571DF1D5" FromRole="BlackHoles" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="CelestialObject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Asteroids" Relationship="Self.FK__Asteroids__Celes__5629CD9C" FromRole="CelestialObjects" ToRole="Asteroids" />
+    <NavigationProperty Name="BlackHoles" Relationship="Self.FK__BlackHole__Celes__571DF1D5" FromRole="CelestialObjects" ToRole="BlackHoles" />
+    <NavigationProperty Name="Comets" Relationship="Self.FK__Comets__Celestia__5812160E" FromRole="CelestialObjects" ToRole="Comets" />
+    <NavigationProperty Name="DwarfPlanets" Relationship="Self.FK__DwarfPlan__Celes__59063A47" FromRole="CelestialObjects" ToRole="DwarfPlanets" />
+    <NavigationProperty Name="Galaxies" Relationship="Self.FK__Galaxies__Celest__59FA5E80" FromRole="CelestialObjects" ToRole="Galaxies" />
+    <NavigationProperty Name="GalaxyClusters" Relationship="Self.FK__GalaxyClu__Celes__5AEE82B9" FromRole="CelestialObjects" ToRole="GalaxyClusters" />
+    <NavigationProperty Name="GasGiants" Relationship="Self.FK__GasGiants__Celes__5BE2A6F2" FromRole="CelestialObjects" ToRole="GasGiants" />
+    <NavigationProperty Name="NaturalSatellites" Relationship="Self.FK__NaturalSa__Celes__5CD6CB2B" FromRole="CelestialObjects" ToRole="NaturalSatellites" />
+    <NavigationProperty Name="Nebulae" Relationship="Self.FK__Nebulae__Celesti__5DCAEF64" FromRole="CelestialObjects" ToRole="Nebulae" />
+    <NavigationProperty Name="Players" Relationship="Self.FK__Players__LevelRe__160F4887" FromRole="CelestialObjects" ToRole="Players" />
+    <NavigationProperty Name="Stars" Relationship="Self.FK__Stars__Celestial__5EBF139D" FromRole="CelestialObjects" ToRole="Stars" />
+    <NavigationProperty Name="TerrestrialPlanets" Relationship="Self.FK__Terrestri__Celes__5FB337D6" FromRole="CelestialObjects" ToRole="TerrestrialPlanets" />
+  </EntityType>
+  <EntityType Name="Comet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Comets__Celestia__5812160E" FromRole="Comets" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="DwarfPlanet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__DwarfPlan__Celes__59063A47" FromRole="DwarfPlanets" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="Galaxy">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Galaxies__Celest__59FA5E80" FromRole="Galaxies" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="GalaxyCluster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__GalaxyClu__Celes__5AEE82B9" FromRole="GalaxyClusters" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="GasGiant">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__GasGiants__Celes__5BE2A6F2" FromRole="GasGiants" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="NaturalSatellite">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__NaturalSa__Celes__5CD6CB2B" FromRole="NaturalSatellites" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="Nebula">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Nebulae__Celesti__5DCAEF64" FromRole="Nebulae" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="Player">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlayerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TimePlayed" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TotalStarDust" Type="Int32" Nullable="false" />
+    <Property Name="LevelReached" Type="Int32" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Players__LevelRe__160F4887" FromRole="Players" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="Star">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Stars__Celestial__5EBF139D" FromRole="Stars" ToRole="CelestialObjects" />
+  </EntityType>
+  <EntityType Name="TerrestrialPlanet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="Int32" />
+    <Property Name="SpecificAttribute" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <Property Name="StarDustProduction" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="CelestialObject" Relationship="Self.FK__Terrestri__Celes__5FB337D6" FromRole="TerrestrialPlanets" ToRole="CelestialObjects" />
+  </EntityType>
+  <Association Name="FK__Asteroids__Celes__5629CD9C">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="Asteroids" Type="Self.Asteroid" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asteroids">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BlackHole__Celes__571DF1D5">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="BlackHoles" Type="Self.BlackHole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BlackHoles">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comets__Celestia__5812160E">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="Comets" Type="Self.Comet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comets">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DwarfPlan__Celes__59063A47">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="DwarfPlanets" Type="Self.DwarfPlanet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DwarfPlanets">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Galaxies__Celest__59FA5E80">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="Galaxies" Type="Self.Galaxy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Galaxies">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GalaxyClu__Celes__5AEE82B9">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="GalaxyClusters" Type="Self.GalaxyCluster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GalaxyClusters">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GasGiants__Celes__5BE2A6F2">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="GasGiants" Type="Self.GasGiant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GasGiants">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NaturalSa__Celes__5CD6CB2B">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="NaturalSatellites" Type="Self.NaturalSatellite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NaturalSatellites">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Nebulae__Celesti__5DCAEF64">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="Nebulae" Type="Self.Nebula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nebulae">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Players__LevelRe__160F4887">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="Players" Type="Self.Player" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Players">
+        <PropertyRef Name="LevelReached" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stars__Celestial__5EBF139D">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="Stars" Type="Self.Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stars">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Terrestri__Celes__5FB337D6">
+    <End Role="CelestialObjects" Type="Self.CelestialObject" Multiplicity="0..1" />
+    <End Role="TerrestrialPlanets" Type="Self.TerrestrialPlanet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TerrestrialPlanets">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Asteroids" EntityType="Self.Asteroid" />
+    <EntitySet Name="BlackHoles" EntityType="Self.BlackHole" />
+    <EntitySet Name="CelestialObjects" EntityType="Self.CelestialObject" />
+    <EntitySet Name="Comets" EntityType="Self.Comet" />
+    <EntitySet Name="DwarfPlanets" EntityType="Self.DwarfPlanet" />
+    <EntitySet Name="Galaxies" EntityType="Self.Galaxy" />
+    <EntitySet Name="GalaxyClusters" EntityType="Self.GalaxyCluster" />
+    <EntitySet Name="GasGiants" EntityType="Self.GasGiant" />
+    <EntitySet Name="NaturalSatellites" EntityType="Self.NaturalSatellite" />
+    <EntitySet Name="Nebulae" EntityType="Self.Nebula" />
+    <EntitySet Name="Players" EntityType="Self.Player" />
+    <EntitySet Name="Stars" EntityType="Self.Star" />
+    <EntitySet Name="TerrestrialPlanets" EntityType="Self.TerrestrialPlanet" />
+    <AssociationSet Name="FK__Asteroids__Celes__5629CD9C" Association="Self.FK__Asteroids__Celes__5629CD9C">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Asteroids" EntitySet="Asteroids" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BlackHole__Celes__571DF1D5" Association="Self.FK__BlackHole__Celes__571DF1D5">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="BlackHoles" EntitySet="BlackHoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comets__Celestia__5812160E" Association="Self.FK__Comets__Celestia__5812160E">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Comets" EntitySet="Comets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DwarfPlan__Celes__59063A47" Association="Self.FK__DwarfPlan__Celes__59063A47">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="DwarfPlanets" EntitySet="DwarfPlanets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Galaxies__Celest__59FA5E80" Association="Self.FK__Galaxies__Celest__59FA5E80">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Galaxies" EntitySet="Galaxies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GalaxyClu__Celes__5AEE82B9" Association="Self.FK__GalaxyClu__Celes__5AEE82B9">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="GalaxyClusters" EntitySet="GalaxyClusters" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GasGiants__Celes__5BE2A6F2" Association="Self.FK__GasGiants__Celes__5BE2A6F2">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="GasGiants" EntitySet="GasGiants" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NaturalSa__Celes__5CD6CB2B" Association="Self.FK__NaturalSa__Celes__5CD6CB2B">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="NaturalSatellites" EntitySet="NaturalSatellites" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Nebulae__Celesti__5DCAEF64" Association="Self.FK__Nebulae__Celesti__5DCAEF64">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Nebulae" EntitySet="Nebulae" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Players__LevelRe__160F4887" Association="Self.FK__Players__LevelRe__160F4887">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Players" EntitySet="Players" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stars__Celestial__5EBF139D" Association="Self.FK__Stars__Celestial__5EBF139D">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Stars" EntitySet="Stars" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Terrestri__Celes__5FB337D6" Association="Self.FK__Terrestri__Celes__5FB337D6">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="TerrestrialPlanets" EntitySet="TerrestrialPlanets" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

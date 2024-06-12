@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="Asteroids">
+      <EntityTypeMapping TypeName="Database1Model.Asteroid">
+        <MappingFragment StoreEntitySet="Asteroids">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlackHoles">
+      <EntityTypeMapping TypeName="Database1Model.BlackHole">
+        <MappingFragment StoreEntitySet="BlackHoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CelestialObjects">
+      <EntityTypeMapping TypeName="Database1Model.CelestialObject">
+        <MappingFragment StoreEntitySet="CelestialObjects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comets">
+      <EntityTypeMapping TypeName="Database1Model.Comet">
+        <MappingFragment StoreEntitySet="Comets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute1" ColumnName="SpecificAttribute1" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DwarfPlanets">
+      <EntityTypeMapping TypeName="Database1Model.DwarfPlanet">
+        <MappingFragment StoreEntitySet="DwarfPlanets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Galaxies">
+      <EntityTypeMapping TypeName="Database1Model.Galaxy">
+        <MappingFragment StoreEntitySet="Galaxies">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GalaxyClusters">
+      <EntityTypeMapping TypeName="Database1Model.GalaxyCluster">
+        <MappingFragment StoreEntitySet="GalaxyClusters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GasGiants">
+      <EntityTypeMapping TypeName="Database1Model.GasGiant">
+        <MappingFragment StoreEntitySet="GasGiants">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NaturalSatellites">
+      <EntityTypeMapping TypeName="Database1Model.NaturalSatellite">
+        <MappingFragment StoreEntitySet="NaturalSatellites">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nebulae">
+      <EntityTypeMapping TypeName="Database1Model.Nebula">
+        <MappingFragment StoreEntitySet="Nebulae">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Players">
+      <EntityTypeMapping TypeName="Database1Model.Player">
+        <MappingFragment StoreEntitySet="Players">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PlayerName" ColumnName="PlayerName" />
+          <ScalarProperty Name="TimePlayed" ColumnName="TimePlayed" />
+          <ScalarProperty Name="TotalStarDust" ColumnName="TotalStarDust" />
+          <ScalarProperty Name="LevelReached" ColumnName="LevelReached" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stars">
+      <EntityTypeMapping TypeName="Database1Model.Star">
+        <MappingFragment StoreEntitySet="Stars">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TerrestrialPlanets">
+      <EntityTypeMapping TypeName="Database1Model.TerrestrialPlanet">
+        <MappingFragment StoreEntitySet="TerrestrialPlanets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CelestialObjectId" ColumnName="CelestialObjectId" />
+          <ScalarProperty Name="SpecificAttribute" ColumnName="SpecificAttribute" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StarDustProduction" ColumnName="StarDustProduction" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

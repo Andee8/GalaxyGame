@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|c:\\users\\tical\\source\\repos\\galaxygame\\galaxygame\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|solutionrelative:galaxygame\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|C:\\Users\\tical\\source\\repos\\GalaxyGame\\galaxygame\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|solutionrelative:galaxygame\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|C:\\Users\\tical\\source\\repos\\GalaxyGame\\galaxygame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|solutionrelative:galaxygame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_TICAL_SOURCE_REPOS_GALAXYGAME_GALAXYGAME_DATABASE1.MDF/True/SqlTable/dbo.Stars.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|C:\\Users\\tical\\source\\repos\\GalaxyGame\\galaxygame\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|solutionrelative:galaxygame\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|C:\\Users\\tical\\source\\repos\\GalaxyGame\\galaxygame\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|solutionrelative:galaxygame\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|C:\\Users\\tical\\source\\repos\\GalaxyGame\\galaxygame\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF96AC8F-F396-4DED-A8B0-65E068BFA834}|GalaxyGame\\GalaxyGame.csproj|solutionrelative:galaxygame\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.Stars [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_TICAL_SOURCE_REPOS_GALAXYGAME_GALAXYGAME_DATABASE1.MDF/True/SqlTable/dbo.Stars.sql",
+              "ToolTip": "dbo.Stars [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-01T19:20:09.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form3.cs",
+              "RelativeDocumentMoniker": "GalaxyGame\\Form3.cs",
+              "ToolTip": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form3.cs [Design]",
+              "RelativeToolTip": "GalaxyGame\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T02:06:36.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form3.cs",
+              "RelativeDocumentMoniker": "GalaxyGame\\Form3.cs",
+              "ToolTip": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form3.cs",
+              "RelativeToolTip": "GalaxyGame\\Form3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T01:59:23.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "GalaxyGame\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form2.Designer.cs",
+              "RelativeToolTip": "GalaxyGame\\Form2.Designer.cs",
+              "ViewState": "AQIAAO8DAAAAAAAAAAAawAgEAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T01:08:02.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form1.cs",
+              "RelativeDocumentMoniker": "GalaxyGame\\Form1.cs",
+              "ToolTip": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form1.cs",
+              "RelativeToolTip": "GalaxyGame\\Form1.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T00:49:32.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form2.cs",
+              "RelativeDocumentMoniker": "GalaxyGame\\Form2.cs",
+              "ToolTip": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form2.cs",
+              "RelativeToolTip": "GalaxyGame\\Form2.cs",
+              "ViewState": "AQIAAGUIAAAAAAAAAAAuwIoIAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T20:19:03.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form2.cs",
+              "RelativeDocumentMoniker": "GalaxyGame\\Form2.cs",
+              "ToolTip": "C:\\Users\\tical\\source\\repos\\GalaxyGame\\GalaxyGame\\Form2.cs [Design]",
+              "RelativeToolTip": "GalaxyGame\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:33:41.125Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

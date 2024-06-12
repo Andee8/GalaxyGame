@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Asteroids">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="BlackHoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="CelestialObjects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="Comets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="DwarfPlanets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Galaxies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="GalaxyClusters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="GasGiants">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="NaturalSatellites">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Nebulae">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Players">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlayerName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TimePlayed" Type="text" Nullable="false" />
+    <Property Name="TotalStarDust" Type="int" Nullable="false" />
+    <Property Name="LevelReached" Type="int" />
+  </EntityType>
+  <EntityType Name="Stars">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TerrestrialPlanets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CelestialObjectId" Type="int" />
+    <Property Name="SpecificAttribute" Type="nvarchar" MaxLength="100" />
+    <Property Name="Fact" Type="text" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="StarDustProduction" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__Asteroids__Celes__5629CD9C">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="Asteroids" Type="Self.Asteroids" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Asteroids">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BlackHole__Celes__571DF1D5">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="BlackHoles" Type="Self.BlackHoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BlackHoles">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comets__Celestia__5812160E">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="Comets" Type="Self.Comets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comets">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DwarfPlan__Celes__59063A47">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="DwarfPlanets" Type="Self.DwarfPlanets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DwarfPlanets">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Galaxies__Celest__59FA5E80">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="Galaxies" Type="Self.Galaxies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Galaxies">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GalaxyClu__Celes__5AEE82B9">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="GalaxyClusters" Type="Self.GalaxyClusters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GalaxyClusters">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GasGiants__Celes__5BE2A6F2">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="GasGiants" Type="Self.GasGiants" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GasGiants">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NaturalSa__Celes__5CD6CB2B">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="NaturalSatellites" Type="Self.NaturalSatellites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NaturalSatellites">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Nebulae__Celesti__5DCAEF64">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="Nebulae" Type="Self.Nebulae" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nebulae">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Players__LevelRe__160F4887">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="Players" Type="Self.Players" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Players">
+        <PropertyRef Name="LevelReached" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stars__Celestial__5EBF139D">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="Stars" Type="Self.Stars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stars">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Terrestri__Celes__5FB337D6">
+    <End Role="CelestialObjects" Type="Self.CelestialObjects" Multiplicity="0..1" />
+    <End Role="TerrestrialPlanets" Type="Self.TerrestrialPlanets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CelestialObjects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TerrestrialPlanets">
+        <PropertyRef Name="CelestialObjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1ModelStoreContainer">
+    <EntitySet Name="Asteroids" EntityType="Self.Asteroids" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BlackHoles" EntityType="Self.BlackHoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CelestialObjects" EntityType="Self.CelestialObjects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comets" EntityType="Self.Comets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DwarfPlanets" EntityType="Self.DwarfPlanets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Galaxies" EntityType="Self.Galaxies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GalaxyClusters" EntityType="Self.GalaxyClusters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GasGiants" EntityType="Self.GasGiants" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NaturalSatellites" EntityType="Self.NaturalSatellites" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nebulae" EntityType="Self.Nebulae" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Players" EntityType="Self.Players" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stars" EntityType="Self.Stars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TerrestrialPlanets" EntityType="Self.TerrestrialPlanets" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Asteroids__Celes__5629CD9C" Association="Self.FK__Asteroids__Celes__5629CD9C">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Asteroids" EntitySet="Asteroids" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BlackHole__Celes__571DF1D5" Association="Self.FK__BlackHole__Celes__571DF1D5">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="BlackHoles" EntitySet="BlackHoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comets__Celestia__5812160E" Association="Self.FK__Comets__Celestia__5812160E">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Comets" EntitySet="Comets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DwarfPlan__Celes__59063A47" Association="Self.FK__DwarfPlan__Celes__59063A47">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="DwarfPlanets" EntitySet="DwarfPlanets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Galaxies__Celest__59FA5E80" Association="Self.FK__Galaxies__Celest__59FA5E80">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Galaxies" EntitySet="Galaxies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GalaxyClu__Celes__5AEE82B9" Association="Self.FK__GalaxyClu__Celes__5AEE82B9">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="GalaxyClusters" EntitySet="GalaxyClusters" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GasGiants__Celes__5BE2A6F2" Association="Self.FK__GasGiants__Celes__5BE2A6F2">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="GasGiants" EntitySet="GasGiants" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NaturalSa__Celes__5CD6CB2B" Association="Self.FK__NaturalSa__Celes__5CD6CB2B">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="NaturalSatellites" EntitySet="NaturalSatellites" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Nebulae__Celesti__5DCAEF64" Association="Self.FK__Nebulae__Celesti__5DCAEF64">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Nebulae" EntitySet="Nebulae" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Players__LevelRe__160F4887" Association="Self.FK__Players__LevelRe__160F4887">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Players" EntitySet="Players" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stars__Celestial__5EBF139D" Association="Self.FK__Stars__Celestial__5EBF139D">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="Stars" EntitySet="Stars" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Terrestri__Celes__5FB337D6" Association="Self.FK__Terrestri__Celes__5FB337D6">
+      <End Role="CelestialObjects" EntitySet="CelestialObjects" />
+      <End Role="TerrestrialPlanets" EntitySet="TerrestrialPlanets" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

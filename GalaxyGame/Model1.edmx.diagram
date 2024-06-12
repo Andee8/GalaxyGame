@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="91d454a8e5984f3689a6f35c473381d2" Name="Diagram1">
+        <EntityTypeShape EntityType="Database1Model.Asteroid" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.BlackHole" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.CelestialObject" Width="1.5" PointX="0.75" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Comet" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.DwarfPlanet" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Galaxy" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.GalaxyCluster" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.GasGiant" Width="1.5" PointX="3" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.NaturalSatellite" Width="1.5" PointX="3" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Nebula" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Player" Width="1.5" PointX="3" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Star" Width="1.5" PointX="3" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.TerrestrialPlanet" Width="1.5" PointX="3" PointY="38.75" IsExpanded="true" />
+        <AssociationConnector Association="Database1Model.FK__Asteroids__Celes__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__BlackHole__Celes__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Comets__Celestia__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__DwarfPlan__Celes__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Galaxies__Celest__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__GalaxyClu__Celes__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__GasGiants__Celes__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__NaturalSa__Celes__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Nebulae__Celesti__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Players__LevelRe__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Stars__Celestial__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK__Terrestri__Celes__5FB337D6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
